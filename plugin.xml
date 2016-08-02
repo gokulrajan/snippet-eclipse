@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Sample XML Editor"
+            extensions="cry"
+            icon="icons/sample.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="com.gokul.second.editors.XMLEditor"
+            id="com.gokul.second.editors.XMLEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.gokul.second.templates.CryTemplatePreferencePage"
+            id="com.gokul.second.page1"
+            name="Cry Templates">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors.templates">
+      <contextType
+	        class="com.gokul.second.templates.CryTemplateContext"
+	        id="com.gokul.second.templates.contextType.cry"
+	        name="Cry">
+	  </contextType>
+	  <template
+            autoinsert="true"
+            name="lang"
+            description="Check If it works"
+            contextTypeId="com.gokul.second.templates.contextType.cry"
+            id="io.emmet.eclipse.variable.lang">
+			<pattern>en</pattern>
+		</template>
+   </extension>
+
+</plugin>

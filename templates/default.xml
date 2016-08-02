@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+ 
+ <template
+        autoinsert="true"
+        context="com.gokul.second.templates.CryTemplateContext.cry"
+        deleted="false"
+        description="Auto-escaping inside the block"
+        enabled="true"
+        name="autoescape"
+        id="com.gokul.second.templates.tags.autoescape"
+   >{% autoescape ${onoff} %}{% endautoescape %}
+  </template>
+  
+  </templates>
